@@ -4,4 +4,4 @@
     :password: password
 
 :targets:
-  :default: https://www.example.com
+  :default: http://www.example.com

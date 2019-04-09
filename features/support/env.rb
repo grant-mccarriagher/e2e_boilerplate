@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'cucumber'
 require 'selenium-webdriver'
+require 'webdrivers'
 
 # Simplifies loading model requirements
 require 'require_all'
@@ -25,8 +26,8 @@ require 'active_support/all'
 load 'config/env_config.rb'
 load 'config/env_driver.rb'
 
-require_all 'SiteName'
+require_all 'site_name'
 
-require 'pry-rescue'
-require 'pry-stack_explorer'
+#require 'pry-rescue'
+#require 'pry-stack_explorer'
 require 'colorize'

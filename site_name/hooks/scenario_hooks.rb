@@ -4,8 +4,12 @@ Before do |scenario|
   $verify ||= Hash.new
 end
 
-# Log in
-Before('not @LoggedOut') do
+# Set default user
+Before do |scenario|
   set_user
+end
+
+# Log in
+Before('not @LoggedOut') do |scenario|
   login
 end
