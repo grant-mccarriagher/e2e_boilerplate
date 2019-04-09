@@ -1,0 +1,23 @@
+<%
+  # ----- Set flags -----
+  flag_headless     = 'HEADLESS=true'      # Flag headless? as true
+
+  # ----- Set formatters and outputs for them -----
+  format_pretty     = '--format Cucumber::Formatter::Pretty'
+
+  # ----- Misc configuration -----
+  guess             = '--guess'     # Enable ambiguous step matching
+
+  # ----- Profiles -----
+  default             = [guess, format_pretty]
+  headless            = [flag_headless]
+  default_headless    = [default, headless]
+
+  def profile items
+    items.flatten.join(' ')
+  end
+%>
+
+default:            <%= profile(default) %>
+default-headless:   <%= profile(default_headless) %>
+

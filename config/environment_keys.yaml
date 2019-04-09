@@ -1,0 +1,7 @@
+:users:
+  :default:
+    :username: user
+    :password: password
+
+:targets:
+  :default: https://www.example.com

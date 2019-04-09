@@ -1,0 +1,6 @@
+To use this boilerplate:
+
+-Rename "e2e_boilerplate" to your project name
+-Rename the "site_name" folder to your site name in snake case
+-Rename "site_name.rb" to your site name in snake case
+-Replace all instances of "SiteName" to your site name in camel case
